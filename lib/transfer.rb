@@ -27,7 +27,7 @@ class Transfer
     if status == "complete"
       receiver.balance -= amount
       sender.balance += amount
-      self.status = "reversed"
+      status = "reversed"
     else
       reject_transfer
     end
